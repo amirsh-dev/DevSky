@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stormy Weather Dashboard</title>
+
+  <link rel="stylesheet" href="styles/app.css" />
+</head>
+
+<body>
+    <header class="header">
+        <!-- <h1 class="header__logo">DevSky</h1> -->
+    </header>
+  <main class="main weather-dashboard">
+
+    <aside class="sidebar">
+        <div class="theme-switcher">
+            <h1 class="header__logo">DevSky</h1>
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              type="button"
+              aria-label="Switch to light theme"
+              aria-pressed="false"
+            >
+              <span
+                class="theme-icon theme-icon-dark"
+                aria-hidden="true"
+              >☾</span>
+
+              <span
+                class="theme-icon theme-icon-light"
+                aria-hidden="true"
+              >☀</span>
+
+              <span
+                class="theme-toggle-slider"
+                aria-hidden="true"
+              ></span>
+            </button>
+        </div>
+      <section class="location-picker">
+        <div class="location-picker-header">
+          <label for="location-search">Choose Location</label>
+        </div>
+
+        <div class="search-wrapper">
+
+            <!-- delet from css html relative codes -->
+          <!-- <span aria-hidden="true">⌕</span> -->
+
+          <input
+            id="location-search"
+            class="search-input"
+            type="search"
+            placeholder="Search..."
+            aria-label="Search location"
+          />
+        </div>
+
+        <div
+          id="search-results"
+          class="search-results"
+          aria-live="polite"
+        ></div>
+      </section>
+
+      
+
+      <article class="city-card">
+        <h2 class="city-name">Mumbai</h2>
+
+        <div class="weather-icon" aria-hidden="true">🌧️</div>
+
+        <div class="city-temperature">28°C</div>
+
+        <div class="city-condition">
+          <span class="city-condition-icon" aria-hidden="true">🌧️</span>
+          <span>Rainy stormy clouds</span>
+        </div>
+      </article>
+
+      <article class="city-card">
+        <h2 class="city-name">Visakhapatnam</h2>
+
+        <div class="weather-icon" aria-hidden="true">🌤️</div>
+
+        <div class="city-temperature">32°C</div>
+
+        <div class="city-condition">
+          <span class="city-condition-icon" aria-hidden="true">🌤️</span>
+          <span>Partly cloudy</span>
+        </div>
+      </article>
+
+      <article class="city-card">
+        <h2 class="city-name">Delhi</h2>
+
+        <div class="weather-icon" aria-hidden="true">🌤️</div>
+
+        <div class="city-temperature">34°C</div>
+
+        <div class="city-condition">
+          <span class="city-condition-icon" aria-hidden="true">🌤️</span>
+          <span>Partly cloudy</span>
+        </div>
+      </article>
+
+    </aside>
+
+    <section class="main-content">
+      
+      <header class="weather-header">
+
+        <div class="current-location">
+          <div class="location-line">
+            <span
+              class="location-pin"
+              aria-hidden="true"
+            ></span>
+
+            <span>
+              Gujarat
+              <span class="date">(Monday, June 10)</span>
+            </span> 
+          </div>
+
+          <div class="temperature-row">
+            <strong class="main-temperature">28°C</strong>
+
+            <div class="high-low">
+              <span>High 29</span>
+              <span>Low 24</span>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-label">Humidity</span>
+          <span class="stat-value">84%</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-label">Visibility</span>
+          <span class="stat-value">5km</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-label">Feels like</span>
+          <span class="stat-value">32°C</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-label">UV index</span>
+          <span class="stat-value">5.50<span class="stat-unit">uv</span></span>
+        </div>
+
+      </header>
+
+      <section class="forecast">
+        <h1 class="weather-status">
+          Stormy<br />
+          With Partly cloudy
+        </h1>
+      </section>
+
+    </section>
+
+  </main>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
