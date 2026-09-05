@@ -99,11 +99,11 @@ function buildCityResultHTML(city) {
       data-longitude="${city.longitude}"
       data-city="${city.name}"
     >
-      <span class="search-result-name">
+      <span class="search-result__name">
         ${city.name}
       </span>
 
-      <span class="search-result-location">
+      <span class="search-result__location">
         ${location}
       </span>
     </button>

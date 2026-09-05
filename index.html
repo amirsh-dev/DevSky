@@ -9,47 +9,43 @@
 </head>
 
 <body>
-    <header class="header">
-        <!-- <h1 class="header__logo">DevSky</h1> -->
-    </header>
-  <main class="main weather-dashboard">
+
+  <main class="weather-dashboard">
 
     <aside class="sidebar">
-        <div class="theme-switcher">
-            <h1 class="header__logo">DevSky</h1>
+
+      <header class="header">
+            <h1 class="logo">DevSky</h1>
             <button
-              class="theme-toggle"
+              class="theme theme-toggle"
               id="theme-toggle"
               type="button"
               aria-label="Switch to light theme"
               aria-pressed="false"
             >
               <span
-                class="theme-icon theme-icon-dark"
+                class="theme__icon theme__icon--dark"
                 aria-hidden="true"
               >☾</span>
 
               <span
-                class="theme-icon theme-icon-light"
+                class="theme__icon theme__icon--light"
                 aria-hidden="true"
               >☀</span>
 
               <span
-                class="theme-toggle-slider"
+                class="theme-toggle__slider"
                 aria-hidden="true"
               ></span>
             </button>
-        </div>
+      </header>
+
       <section class="location-picker">
-        <div class="location-picker-header">
-          <label for="location-search">Choose Location</label>
+        <div class="location-picker__header">
+          <label class="location-picker__label" for="location-search">Choose Location</label>
         </div>
 
         <div class="search-wrapper">
-
-            <!-- delet from css html relative codes -->
-          <!-- <span aria-hidden="true">⌕</span> -->
-
           <input
             id="location-search"
             class="search-input"
@@ -66,43 +62,41 @@
         ></div>
       </section>
 
-      
-
-      <article class="city-card">
-        <h2 class="city-name">Mumbai</h2>
+      <article class="city city__card">
+        <h2 class="city__name">Mumbai</h2>
 
         <div class="weather-icon" aria-hidden="true">🌧️</div>
 
-        <div class="city-temperature">28°C</div>
+        <div class="city__temperature">28°C</div>
 
-        <div class="city-condition">
-          <span class="city-condition-icon" aria-hidden="true">🌧️</span>
+        <div class="city__condition">
+          <span class="city__condition-icon" aria-hidden="true">🌧️</span>
           <span>Rainy stormy clouds</span>
         </div>
       </article>
 
-      <article class="city-card">
-        <h2 class="city-name">Visakhapatnam</h2>
+      <article class="city city__card">
+        <h2 class="city__name">Visakhapatnam</h2>
 
         <div class="weather-icon" aria-hidden="true">🌤️</div>
 
-        <div class="city-temperature">32°C</div>
+        <div class="city__temperature">32°C</div>
 
-        <div class="city-condition">
-          <span class="city-condition-icon" aria-hidden="true">🌤️</span>
+        <div class="city__condition">
+          <span class="city__condition-icon" aria-hidden="true">🌤️</span>
           <span>Partly cloudy</span>
         </div>
       </article>
 
-      <article class="city-card">
-        <h2 class="city-name">Delhi</h2>
+      <article class="city city__card">
+        <h2 class="city__name">Delhi</h2>
 
         <div class="weather-icon" aria-hidden="true">🌤️</div>
 
-        <div class="city-temperature">34°C</div>
+        <div class="city__temperature">34°C</div>
 
-        <div class="city-condition">
-          <span class="city-condition-icon" aria-hidden="true">🌤️</span>
+        <div class="city__condition">
+          <span class="city__condition-icon" aria-hidden="true">🌤️</span>
           <span>Partly cloudy</span>
         </div>
       </article>
